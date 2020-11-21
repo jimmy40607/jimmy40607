@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html> 
 <style>
  .a{
@@ -9,7 +10,26 @@
 </style>
   <head>
   <title>Rest In Peace Kobe </title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+<script >
+  $(document).ready(function() {
+   $("#div1").hide();
+   $("#div2").hide(); 
+     $("#button1").click(function() {
+      $("#div1").toggle(1000);
+      $("#button1").hide();
+       return false;
+     });
+ $("#button2").click(function() {
+      $("#div2").fadeIn(1000); 
+      $("#button2").hide();
+       return false;
+     });
+  });
+</script>
   </head>
+ 
  <body>
 <marquee direction="left" height="35" scrollamount="5" > <font color=RoyalBlue size=6> I can’t relate to lazy people. We don’t speak the same language. I don’t understand you. I don’t want to understand you. I don’t want to be the next Michael Jordan, I only want to be Kobe Bryant. I'm chasing perfection. </marquee>
 <style>	
@@ -38,4 +58,7 @@ background-image:url("https://cdn.vox-cdn.com/thumbor/SV7y2f_eBdL9SP1yCbVU2jw5B2
 <img src="https://assets.juksy.com/files/articles/94440/5d7e311841d54.gif"
 width="30%" height="40%">
 </body>
-</html>
+
+     <div id="div1" onclick="submmit" style="display: none;"><img src="https://clutchpoints.com/wp-content/uploads/2020/05/Los-Angeles-Lakers-Kobe-Bryant-1024x574.jpg" height="300" id="img1"></div>
+   <button id="button1">突如其來的意外</button>
+ </html>
